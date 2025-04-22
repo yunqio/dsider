@@ -13,9 +13,9 @@
 - 思维链(reasoning_content)支持
 
 ## 部署
-### 使用 Docker 部署
+### 1.使用 Docker 部署
 
-#### 1. 安装 Docker（如果未安装）
+#### 1.1 安装 Docker（如果未安装）
 
 ```bash
 # Ubuntu/Debian
@@ -30,7 +30,7 @@ sudo yum install docker-ce docker-ce-cli containerd.io -y
 sudo systemctl enable --now docker
 ```
 
-#### 2. 克隆仓库并构建 Docker 镜像
+#### 1.2 克隆仓库并构建 Docker 镜像
 
 ```bash
 # 克隆仓库
@@ -38,16 +38,17 @@ git clone https://github.com/yunqio/dsider.git
 cd dsider
 
 # 构建 Docker 镜像
+```bash
 sudo docker build -t dsider .
 ```
 
-#### 3. 运行 Docker 容器
+#### 1.3 运行 Docker 容器
 
 ```bash
 # 启动容器，映射端口 7860 到宿主机，并命名容器为dsider
 sudo docker run -d -p 7860:7860 --name dsider dsider
 ```
-### dockerhub部署
+### 2.dockerhub部署
 
 使用DockerHub上的预构建镜像可以更加方便地部署本服务，无需克隆代码和手动构建：
 
@@ -60,7 +61,12 @@ sudo docker run -d -p 7860:7860 --name dsider 958527256docker/dsider:latest
 
 
 
-### 使用Docker Compose部署
+### 3.使用Docker Compose部署
+```bash
+# 克隆仓库
+git clone https://github.com/yunqio/dsider.git
+cd dsider
+
 sudo docker-compose up -d
 
 
