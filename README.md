@@ -48,7 +48,7 @@ sudo docker build -t dsider .
 # 启动容器，映射端口 7860 到宿主机，并命名容器为dsider
 sudo docker run -d -p 7860:7860 --name dsider dsider
 ```
-### 2.dockerhub部署
+### 2.Dockerhub部署
 
 使用DockerHub上的预构建镜像可以更加方便地部署本服务，无需克隆代码和手动构建：
 
@@ -61,7 +61,7 @@ sudo docker run -d -p 7860:7860 --name dsider 958527256docker/dsider:latest
 
 ```
 
-3.使用Docker Compose部署
+### 3.使用Docker Compose部署
 ```bash
 # 克隆仓库
 git clone https://github.com/yunqio/dsider.git
