@@ -1,15 +1,3 @@
----
-title: Deepsider2api
-emoji: 🏢
-colorFrom: green
-colorTo: yellow
-sdk: docker
-pinned: false
-license: mit
----
-
-Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
-
 # DeepSider API代理
 
 这是一个将OpenAI API请求代理到DeepSider API的服务。
