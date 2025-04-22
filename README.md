@@ -59,18 +59,17 @@ sudo docker pull 958527256docker/dsider:latest
 # 运行容器，映射端口7860到宿主机，并命名容器为dsider
 sudo docker run -d -p 7860:7860 --name dsider 958527256docker/dsider:latest
 
+```
 
-
-### 3.使用Docker Compose部署
+3.使用Docker Compose部署
 ```bash
 # 克隆仓库
 git clone https://github.com/yunqio/dsider.git
 cd dsider
 
 sudo docker-compose up -d
-
-
 ```
+
 
 ### 直接部署
 
